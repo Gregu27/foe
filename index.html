@@ -37,6 +37,15 @@ body {
   height: 600px; /* Should be removed. Only for demonstration */
 }
 
+
+/* Create three equal columns that floats next to each other */
+.calculate {
+  float: left;
+  width: 20px;
+  padding: 10px;
+  height: 20px; /* Should be removed. Only for demonstration */
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -62,7 +71,7 @@ body {
 <body>
 
 <div class="header">
-  <h2>FOE calculator 1.6 </h2>
+  <h2>FOE calculator 1.7 </h2>
 </div>
 
 <div class="row">
@@ -77,8 +86,9 @@ body {
             <br>
             
                
-            <input type="button" value=" wyczyść " onclick="calculator.answer.value = ''" />
-            <input type="button" value=" = " onclick="calculator.answer.value = eval(calculator.answer.value*1.9)" />
+            <input type="button" class="clear" value=" C " onclick="calculator.answer.value = ''" />
+            </br>
+            <input type="button" class="calculate" value=" = " onclick="calculator.answer.value = eval(calculator.answer.value*1.9)" />
             </br>
   
     
