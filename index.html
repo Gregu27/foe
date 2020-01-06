@@ -22,6 +22,16 @@ body {
   font-size: 35px;
 }
 
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 350px;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
 
 
 
@@ -41,16 +51,6 @@ body {
   height: 600px; 
 }
 
-img {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 350px;
-}
-
-img:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
 
 input[type=text] {
   width: 100%;
@@ -85,7 +85,7 @@ input[type=text]:focus {
   background-color: #555555;
   color: white;
   border: 2px solid #555555;
-  
+
 }
 
 .button5:hover {
@@ -121,41 +121,33 @@ input[type=text]:focus {
 
 
 
-
 <body>
 
 <div class="header">
   <h2>FOE calculator 1.9 </h2> 
-  <a target="_blank" href="https://pl.wiki.forgeofempires.com/index.php?title=Per%C5%82y_Architektury">
-  <img src="arc.png" alt="arc">
-</a>
+  <a target="_blank" href="https://pl.wiki.forgeofempires.com/index.php?title=Per%C5%82y_Architektury"><img src="arc.png" alt="arc"></a>
 </div>
 
 <div class="row">
+
   <div class="columnSide"></div>
+
   <div class="columnCenter">
-    
-      <div id='calc'>
-  
-          <form name="calculator">
-            
+          <div id='calc'>
+            <form name="calculator">
             <input type="text"  name="answer" />
             <br>
-            
-           
             <input type="button" class="button button5" value=" = " onclick="calculator.answer.value = eval(calculator.answer.value*1.9)" />
-            </br>
-            
-
-    
-          </form>
-         
-        </div>
-
-
+            <br>
+            </form>
+          </div>
   </div>
+
   <div class="columnSide"></div>
+
 </div>
+
+
 
 <div class="footer">
   <p>by Gregu</p>
