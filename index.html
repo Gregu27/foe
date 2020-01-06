@@ -88,7 +88,7 @@ input[type=text]:focus {
   background-color: #ff4d4d;
   color: white;
   border: 2px solid #555555;
-  margin-left: 25%;
+  margin-left: 35%;
 
 }
 
@@ -123,6 +123,7 @@ input[type=text]:focus {
 .footer {
   background-color: #f1f1f1;
   padding: 7px;
+  padding-bottom: 70px;
   text-align: center;
 }
 
@@ -155,7 +156,7 @@ input[type=text]:focus {
             <form name="calculator">
             <input type="text"  name="answer" />
             <br>
-            <input type="button" class="button buttonC" value=" C " onclick="calculator.answer.value = 'pusto '" />
+            <input type="button" class="button buttonC" value=" C " onclick="calculator.answer.value = ''" />
             <input type="button" class="button buttonA" value=" = " onclick="calculator.answer.value = eval(calculator.answer.value*1.9)" />
             <br>
             </form>
@@ -169,7 +170,7 @@ input[type=text]:focus {
 
 
 <div class="footer">
-  <p>by Gregu</p>
+  <p>ver 2.0 by Gregu</p>
 </div>
 
 </body>
